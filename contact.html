@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Me</title>
+    <link rel="stylesheet" href="css\css\contact.css">
+</head>
+<body>
+    <header>
+        <center><h2 class="h">Contact-Me</h2>
+            <a href="mailto:" class="h"><h3>maataouiw901@gmail.com</h3></a></center>
+        <a href="http://www.facebook.com/profile.php?id=100094542360226" target="_blank"><img class="face" src="images\face-icon.jpg" alt="facebook"></a>
+        <a href="http://khamsat.com/user/walid_maataoui" target="_blank"><img class="tele" src="images\khamsat.jpeg" alt="khamsat5"></a>
+        <a href="http://www.upwork.com/freelancers/~013966fc4e761e4f81" target="_blank"><img class="insta" src="images\upwork.png" alt="UpWork"></a>
+        <a href="http://" class="what-link"><img class="what" src="images\what-icon.jpg" alt="whatsapp"></a>
+    </header>
+    <section>
+       <center> <a href="http://" class="popup-link"><div class="mini"><h1>Mini-Service</h1></div></a>
+        <a href="http://fiverr.com/walidmaataoui" target="_blank"><div class="medium"> <h1>Medium-Service</h1></div></a>
+       <a href="http://www.upwork.com/freelancers/~013966fc4e761e4f81" target="_blank"><div class="big"><h1>Big-Service</h1></div>
+    </a><main class="popup"><img src="images\Qr-what.png" alt="PopupImage"></main></center>
+    </section>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+    const popupLink = document.querySelector('.popup-link');
+    const whatLink = document.querySelector('.what-link');
+    const popup = document.querySelector('.popup');
+    const popupImage = popup.querySelector('img');
+
+    popupLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        popup.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+    whatLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        popup.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+    popup.addEventListener('click', function() {
+        popup.style.display = 'none';
+        document.body.style.overflow = 'initial';
+    });
+});
+</script>
+</body>
+</html>
